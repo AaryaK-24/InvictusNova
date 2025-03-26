@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Parent & Teacher Info</title>
+</head>
+<body>
+    <h1>Enter Parent & Teacher Info 📚</h1>
+    <form method="POST" action="/submit">
+        <!-- Teacher Info -->
+        <h3>Teacher Info</h3>
+        <input type="text" name="teacher_name" placeholder="Teacher Name" required><br>
+        <input type="email" name="teacher_email" placeholder="Teacher Email" required><br>
+        
+        <!-- Parent Info -->
+        <h3>Parent Info</h3>
+        <input type="text" name="parent_name" placeholder="Parent Name" required><br>
+        <input type="text" name="student_name" placeholder="Student Name" required><br>
+        <input type="tel" name="parent_phone" placeholder="Parent Phone Number" required><br>
+        
+        <button type="submit">Submit Info ✅</button>
+    </form>
+</body>
+</html>
